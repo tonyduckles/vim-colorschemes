@@ -2,7 +2,7 @@
 
 function fetch () {
     local repo="$1"
-    local tmp="tmp"
+    local tmp=".cache"
     test -d "$tmp" || mkdir -p "$tmp"
     echo ""
     echo "Fetching '${repo}' ..."
