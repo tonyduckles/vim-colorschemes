@@ -19,7 +19,7 @@ function fetch () {
     find "autoload" "colors" -type f | xargs chmod 644
     # commit any changes
     git add "colors/*" "autoload/*" > /dev/null
-    git commit -m "Update '${repo}' ${sha:0:7}"
+    git commit -m "Sync colorscheme: ${repo} @${sha:0:7}"
 }
 
 fetch 'ajmwagar/vim-deus'
